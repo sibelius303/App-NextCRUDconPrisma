@@ -21,7 +21,7 @@ import {
 import { Textarea } from "@/components/ui/textarea"
 import { createTask, updateTask } from "@/actions/task-action-list"
 
-export function TaskForm({task}: {task: any}) {
+export function TaskForm({task}: {task?: any}) {
 
     const actionConditional = task?.id ? updateTask : createTask
     
